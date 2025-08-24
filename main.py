@@ -4,8 +4,6 @@ from tkinter import ttk, messagebox
 import sqlite3
 import os
 
-# --- Database Functions (Copied from the original script) ---
-
 def create_connection(db_file):
     """ Create a database connection to the SQLite database specified by db_file """
     conn = None
@@ -224,8 +222,8 @@ class ShopApp:
         if self.tree.selection():
             self.tree.selection_remove(self.tree.selection()[0])
 
-# --- Main Execution ---
-if __name__ == '__main__':
+if __name__ == '__main__': #main execution
     root = tk.Tk()
     app = ShopApp(root)
     root.mainloop()
+
